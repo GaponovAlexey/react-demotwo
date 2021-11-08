@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Timer = () => {
+export const MemCalBek = () => {
   return (
     <div>
-      
+      start
     </div>
   )
 }
