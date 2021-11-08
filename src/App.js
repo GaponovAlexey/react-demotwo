@@ -1,14 +1,16 @@
-import { DealCounter } from './components/Book'
-import { MemCalBek } from './components/MemCalBek'
-import { Context } from './context/Context'
+import { useState } from 'react'
 
 function App() {
+  const [count, setCount] = useState(0)
+
+  const prevCount = usePrevius(count)
+  
   return (
-    <Context>
-      <div>
-        <DealCounter />
-      </div>
-    </Context>
+    <div>
+      <button>update</button>
+      <h2>Current: {count}</h2>
+      <h2>Previus: {prevCount}</h2>
+    </div>
   )
 }
 
