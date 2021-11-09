@@ -1,11 +1,13 @@
-import { Timer } from './components/Timer'
-
+import { Futer } from "./components/Futer"
+import { Header } from "./components/Header"
+import { Shop } from "./components/Shop"
 
 function App() {
-
   return (
     <div>
-      <Timer />
+      <Header />
+      <Shop />
+      <Futer />
     </div>
   )
 }
