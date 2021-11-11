@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { API_KEY, API_URL } from '../config'
+import { GoodsList } from './GoodsList'
 import { Preloader } from './Preloader'
 
 export const Shop = () => {
@@ -12,20 +13,16 @@ export const Shop = () => {
         Authorization: API_KEY,
       },
     })
-      .then((respone) => respone.json())
+      .then((response) => response.json())
       .then((data) => {
-
         data.shop && setGoods(data.shop)
         setLoading(false)
       })
   }, [])
 
-
-  console.log(goods)
-
   return (
     <main className='container content'>
-      {loading ? <Preloader /> : goods}
+      {loading ? <Preloader /> : <GoodsList goods={goods} />}
       shop
     </main>
   )
