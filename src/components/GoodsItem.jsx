@@ -6,11 +6,11 @@ export const GoodsItem = ({
   displayType,
   price,
   displayAssets,
+  addToBasket,
 }) => {
-  console.log(displayAssets.url)
   return (
     <div>
-      <div className='card' id={offerId}>
+      <div className='card' >
         <div className='card-image'>
           <img src={displayAssets.map(e => e.background)} alt={displayName} />
           <span className='card-title'>{displayName}</span>
@@ -19,7 +19,11 @@ export const GoodsItem = ({
           <p>{displayType}</p>
         </div>
         <div className='card-action'>
-          <button className='btn'>купить</button>
+          <button className='btn' onClick={() => addToBasket({
+            id: offerId,
+            name: displayName,
+            price: price.regularPrice, 
+          })} >купить</button>
           <span className='right'>{price.regularPrice}</span>
         </div>
       </div>
