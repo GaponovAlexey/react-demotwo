@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5c336ae.chunk.css",
-    "main.js": "/static/js/main.24994eed.chunk.js",
-    "main.js.map": "/static/js/main.24994eed.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ce0b7c4f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ce0b7c4f.js.map",
-    "static/js/2.89847d47.chunk.js": "/static/js/2.89847d47.chunk.js",
-    "static/js/2.89847d47.chunk.js.map": "/static/js/2.89847d47.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a5c336ae.chunk.css.map": "/static/css/main.a5c336ae.chunk.css.map",
-    "static/js/2.89847d47.chunk.js.LICENSE.txt": "/static/js/2.89847d47.chunk.js.LICENSE.txt"
+    "main.css": "/react-demotwo/static/css/main.a5c336ae.chunk.css",
+    "main.js": "/react-demotwo/static/js/main.0fa88367.chunk.js",
+    "main.js.map": "/react-demotwo/static/js/main.0fa88367.chunk.js.map",
+    "runtime-main.js": "/react-demotwo/static/js/runtime-main.3515c913.js",
+    "runtime-main.js.map": "/react-demotwo/static/js/runtime-main.3515c913.js.map",
+    "static/js/2.89847d47.chunk.js": "/react-demotwo/static/js/2.89847d47.chunk.js",
+    "static/js/2.89847d47.chunk.js.map": "/react-demotwo/static/js/2.89847d47.chunk.js.map",
+    "index.html": "/react-demotwo/index.html",
+    "static/css/main.a5c336ae.chunk.css.map": "/react-demotwo/static/css/main.a5c336ae.chunk.css.map",
+    "static/js/2.89847d47.chunk.js.LICENSE.txt": "/react-demotwo/static/js/2.89847d47.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce0b7c4f.js",
+    "static/js/runtime-main.3515c913.js",
     "static/js/2.89847d47.chunk.js",
     "static/css/main.a5c336ae.chunk.css",
-    "static/js/main.24994eed.chunk.js"
+    "static/js/main.0fa88367.chunk.js"
   ]
 }
