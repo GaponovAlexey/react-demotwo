@@ -3,8 +3,8 @@ import React from 'react'
 export const Header = () => {
   return (
     <div>
-      <nav>
-        <div className='nav-wrapper'>
+      <nav className='grey lighten-1' >
+        <div className='nav-wrapper grey lighten-1 '>
           {/* <a href='#' className='brand-logo'>
             Shop
           </a> */}
