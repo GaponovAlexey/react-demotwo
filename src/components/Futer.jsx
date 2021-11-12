@@ -6,8 +6,13 @@ export const Futer = () => {
       <footer className='page-footer grey lighten-1 '>
         <div className='footer-copyright'>
           <div className='container'>
-            © { new Date().toLocaleDateString() } Copyright 
-            <a className='grey-text text-lighten-4 right' href='https://github.com/kekelberi/react-demotwo'>
+            © {new Date().toLocaleDateString()} Copyright
+            <a
+              className='grey-text text-lighten-4 right'
+              href='https://github.com/kekelberi/react-demotwo'
+              rel='noreferrer'
+              target='_blank'
+            >
               rep
             </a>
           </div>
