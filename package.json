@@ -1,6 +1,6 @@
 {
   "name": "demotwo",
-  "home": "https://kekelberi.github.io/react-demotwo",
+  "homepage": "https://kekelberi.github.io/react-demotwo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
