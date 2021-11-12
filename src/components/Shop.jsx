@@ -9,10 +9,8 @@ export const Shop = () => {
   const [loading, setLoading] = useState(true)
   const [order, setOrder] = useState([])
 
-console.log(order);
-
   const addToBasket = (item) => {
-    const itemIndex = order.findIndex((orderItem) => orderItem.id === item.id)
+    const itemIndex = order.findIndex((i) => i.id === item.id)
     if (itemIndex < 0) {
       const newItem = {
         ...item,
@@ -26,15 +24,13 @@ console.log(order);
             ...orderItem,
             quantity: orderItem.quantity + 1,
           }
-        } else {
-          return orderItem
         }
       })
       setOrder(newOrder)
     }
   }
 
-  useEffect(function getGoods() {
+  useEffect(() => {
     fetch(API_URL, {
       headers: {
         Authorization: API_KEY,
@@ -42,7 +38,7 @@ console.log(order);
     })
       .then((response) => response.json())
       .then((data) => {
-        data.shop && setGoods(data.shop)
+        setGoods(data.shop)
         setLoading(false)
       })
   }, [])
@@ -50,7 +46,11 @@ console.log(order);
   return (
     <main className='container content'>
       <Card quantity={order.length} />
-      {loading ? <Preloader /> : <GoodsList goods={goods} addToBasket={addToBasket} />}
+      {loading ? (
+        <Preloader />
+      ) : (
+        <GoodsList goods={goods} addToBasket={addToBasket} />
+      )}
       shop
     </main>
   )
